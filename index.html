@@ -1,0 +1,160 @@
+<!--وي شباب مليحا-->
+<!DOCTYPE htm>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>galluery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cruds">
+      <div class="head">
+        <h2>CRUDS</h2>
+
+        <h4>SYSTEM MANGMENET PROUDECT</h4>
+        <p><i>@2025</i></p>
+      </div>
+
+      <div class="add">
+        <button id="hide" class="btn-ad">hide</button>
+        <button id="show" class="btn-ad none">add new prodect</button>
+      </div>
+      <div class="iputs dz" id="div">
+        <div class="top">
+          <h3>new prodect:</h3>
+        </div>
+        <input type="text" placeholder="title" name="name" id="titel" />
+        <div class="pris">
+          <input
+            type="number"
+            onkeyup="totalcal()"
+            name="pris"
+            id="pris"
+            placeholder="pris"
+          />
+          <input
+            type="number"
+            onkeyup="totalcal()"
+            name="ads"
+            id="ads"
+            placeholder="ads"
+          />
+          <input
+            type="number"
+            onkeyup="totalcal()"
+            name="dis"
+            id="diss"
+            placeholder="texc"
+          />
+          <small id="total">3000</small>
+        </div>
+        <input type="number" name="count" id="count" placeholder="count" />
+        <div class="cat">
+          <p class="cat-p">the catergory:</p>
+          <div class="de">
+            <div class="">
+              <label for="phone">phone:</label>
+              <input
+                type="checkbox"
+                onclick="cat(this.id)"
+                name="phone"
+                value="pone"
+                id="phone"
+              />
+            </div>
+            <div class="">
+              <label for="laptop">laptop:</label>
+              <input
+                type="checkbox"
+                name="laptop"
+                value="laptop"
+                style="background: red"
+                id="laptop"
+                onclick="cat(this.id)"
+              />
+            </div>
+            <div class="">
+              <label for="tv">tv:</label>
+              <input
+                type="checkbox"
+                name="tv"
+                onclick="cat(this.id)"
+                value="tv"
+                id="tv"
+              />
+            </div>
+            <div class="">
+              <label for="tec">techonlogik:</label>
+              <input
+                type="checkbox"
+                onclick="cat(this.id)"
+                name="tec"
+                value="tec"
+                id="tec"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="button" id="smbt">creat</button>
+        </div>
+        <hr />
+      </div>
+
+      <div class="outp">
+        <div class="srech">
+          <div class="top">
+            <h3>serch for your prodect:</h3>
+          </div>
+          <input type="text" placeholder="serch:..." id="serch" />
+          <div class="btn">
+            <button id="bytetel">serch by name</button>
+            <button id="by-category">serch by catergory</button>
+          </div>
+        </div>
+        <div class="ds">
+          <div class="t">
+            <div class="top">
+              <h3>the prodect:</h3>
+              <hr />
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>total</th>
+                  <th>catergory</th>
+
+                  <th>action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="clera h" id="clera">
+          <button id="remove" onclick="alldelet()">remove all prodect</button>
+        </div>
+        <div class="margin30"></div>
+      </div>
+    </div>
+    <div class="foter">
+      <div class="sc">
+        <a href="#" title="my github" target="_blank" rel="noopener noreferrer"
+          >@github</a
+        >
+        <p title="the devloper">abde elmouaiz</p>
+        <a
+          href="#"
+          title="my instgram"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@instgram</a
+        >
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

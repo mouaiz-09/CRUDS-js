@@ -12,7 +12,8 @@
       <div class="head">
         <h2>CRUDS</h2>
 
-        <h4>SYSTEM MANGMENET PROUDECT</h4>
+        <h4>SYSTEM MANGMENET Prodect</h4>
+
         <p><i>@2025</i></p>
       </div>
 
@@ -49,16 +50,16 @@
           />
           <small id="total">3000</small>
         </div>
-        <input type="number" name="count" id="count" placeholder="count" />
+        <input type="number" max="99" name="count" id="count" placeholder="count * max 100" />
         <div class="cat">
           <p class="cat-p">the catergory:</p>
           <div class="de">
             <div class="">
               <label for="phone">phone:</label>
               <input
-                type="checkbox"
+                type="radio"
                 onclick="cat(this.id)"
-                name="phone"
+                name="pr"
                 value="pone"
                 id="phone"
               />
@@ -66,8 +67,8 @@
             <div class="">
               <label for="laptop">laptop:</label>
               <input
-                type="checkbox"
-                name="laptop"
+                type="radio"
+                name="pr"
                 value="laptop"
                 style="background: red"
                 id="laptop"
@@ -77,8 +78,8 @@
             <div class="">
               <label for="tv">tv:</label>
               <input
-                type="checkbox"
-                name="tv"
+                type="radio"
+                name="pr"
                 onclick="cat(this.id)"
                 value="tv"
                 id="tv"
@@ -87,9 +88,9 @@
             <div class="">
               <label for="tec">techonlogik:</label>
               <input
-                type="checkbox"
+                type="radio"
                 onclick="cat(this.id)"
-                name="tec"
+                name="pr"
                 value="tec"
                 id="tec"
               />
@@ -97,7 +98,7 @@
           </div>
         </div>
         <div class="btn">
-          <button type="button" id="smbt">creat</button>
+          <button type="button" class="so" id="smbt">creat</button>
         </div>
         <hr />
       </div>
@@ -107,10 +108,62 @@
           <div class="top">
             <h3>serch for your prodect:</h3>
           </div>
-          <input type="text" placeholder="serch:..." id="serch" />
+          <input
+            type="text"
+            onkeyup="serchdata(this.value)"
+            placeholder="serch:..."
+            id="serch"
+          />
+          <div class="redo h"  id="divs">
+            <div class="de">
+              <div class="">
+                <label for="phon">phone:</label>
+                <input
+                  type="radio"
+                  onclick="fat(this.id);srx(this.value)"
+                  name="pro"
+                  value="pohon"
+                  id="phon"
+                />
+              </div>
+              <div class="">
+                <label for="lapto">laptop:</label>
+                <input
+                  type="radio"
+                  name="pro"
+                  value="laptop"
+                  style="background: red"
+                  id="lapto"
+                  onclick="fat(this.id);srx(this.value)"
+                />
+              </div>
+              <div class="">
+                <label for="td">tv:</label>
+                <input
+                  type="radio"
+                  name="pro"
+                  onclick="fat(this.id);srx(this.value)"
+                  value="tv"
+                  id="td"
+                />
+              </div>
+              <div class="">
+                <label for="tec">techonlogik:</label>
+                <input
+                  type="radio"
+                  onclick="fat(this.id);srx(this.value)"
+                  name="pro"
+                  value="tec"
+                  id="tec"
+                />
+              </div>
+            </div>
+          </div>
           <div class="btn">
-            <button id="bytetel">serch by name</button>
-            <button id="by-category">serch by catergory</button>
+            <button onclick="serch(this.id);cl()"  class="h"id="bytetel">serch by name</button>
+            <button onclick="serch(this.id );cl()"  id="by-category">
+              serch by catergory
+            </button>
           </div>
         </div>
         <div class="ds">
@@ -126,7 +179,6 @@
                   <th>name</th>
                   <th>total</th>
                   <th>catergory</th>
-
                   <th>action</th>
                 </tr>
               </thead>

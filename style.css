@@ -78,6 +78,15 @@ input:focus {
 }
 .pris input {
   width: 25%;
+  flex-grow: 1;
+}
+.pris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
 }
 #total {
   background-color: rgb(141, 0, 0);
@@ -135,6 +144,7 @@ button:hover {
 }
 #show {
   width: 160px;
+  
 }
 .h {
   display: none !important;
@@ -163,17 +173,14 @@ hr {
   gap: 10px;
   font-family: cursive;
 }
-.clera{
-
-
- margin-bottom: 70px !important;
-  
+.clera {
+  margin-bottom: 70px !important;
 }
 
 .t {
   margin-top: 30px;
-   min-height: 500px;
-   max-height: 700px;
+  min-height: 500px;
+  max-height: 700px;
   overflow: scroll;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -193,11 +200,9 @@ hr {
   background-color: #035726;
 }
 
-
 table {
   width: 100%;
-
-
+  text-align: center;
 }
 table button {
   color: #000;
@@ -291,12 +296,12 @@ td {
 #remove:hover {
   background-color: rgb(255, 0, 0);
 }
-.cat{
+.cat {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.cat-p{
+.cat-p {
   font-size: 16px;
   padding: 10px;
   background-color: #292929;
@@ -315,18 +320,65 @@ td {
 }
 .cat input {
   width: 20px !important;
-  accent-color:#006454 ;
+  accent-color: #006454;
 }
 
-.cat label{
+.cat label {
   font-size: 15px;
-  color:whitesmoke;
+  color: whitesmoke;
   padding: 5px;
   text-transform: capitalize;
   font-family: cursive;
 }
-.margin30{
+.margin30 {
   width: 100%;
-height: 20px;
-margin-bottom: 70px;
+  height: 20px;
+  margin-bottom: 70px;
+}
+#df::after {
+  content: "  DA";
+  font-family: cursive;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+
+.so{
+  width: 200px;
+  background-color: rgba(0, 137, 190, 0.767);
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+.so:hover{
+
+  background-color: rgba(0, 136, 190, 0.966);
+  color: whitesmoke;
+  text-transform: capitalize;
+  width: 210px;
+  text-align: center;
+}
+.f{
+  display: none;
+}
+.redo{
+  width: 100%;
+
+}
+.redo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin: auto;
+}
+.redo input {
+  width: 20px !important;
+  accent-color: #006454;
+}
+
+.re label {
+  font-size: 15px;
+  color: whitesmoke;
+  padding: 5px;
+  text-transform: capitalize;
+  font-family: cursive;
 }

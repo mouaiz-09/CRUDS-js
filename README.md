@@ -27,6 +27,11 @@ This website is a fun and simple way to interact with data. Here, you can add, v
 ## For Developers and Contributions
 If you want to improve the site or add new features, your contributions are welcome! Feel free to **Fork** the repository and submit a **Pull Request** with your modifications. 🤝
 
----
+## 📫 Contact
+Feel free to connect with me:
+- Email: [rlqyyn@gmial.com).com](mailto:rlqyyn@gmial.com)
+- GitHub: [@mouaiz-09](https://github.com/mouaiz-09)
+- Instagram: [@mouaiz-09](https://www.instagram.com/abde.elmouazi/)
 
-Enjoy your experience with CRUDS-js and let data management become a fun adventure! 😄✨
+---
+🌟 If you like this project, don't forget to star the repository!
